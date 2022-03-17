@@ -3,9 +3,13 @@ import App from "./App.vue";
 
 import router from "@/router";
 import store from "@/store";
+import ElementPlus from "element-plus";
+import axios from "axios";
+
+console.log(axios.defaults);
 
 const app = createApp(App);
 
-app.use(router).use(store);
+app.use(router).use(store).use(ElementPlus);
 
 app.mount("#app");
